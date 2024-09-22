@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>rock,pepper,scissors</title>
+		<style>
+			body{
+				background-color:#7FB3D5 ;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				height:90vh;
+			}
+			img{
+				width:30%;
+				cursor:pointer;
+			}
+			.game{
+				width:600px;
+				padding:15px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="game">
+			<p class="cPoint">computer:0</p>
+			<p class="pPoint">Player:0</p>
+			<img onclick="play('rock')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUT8v0Gu35a7koOFGj04aNV2yABSECQylR-w&s">
+			<img onclick="play('scissors')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIv3Kg09inEBXfw6qPWdO59sxa0MWmRlIcZk1DVzo3WyZ_vQ2H4v_mv25wRuZQVUyX2Zo&usqp=CAU">
+			<img onclick="play('paper')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtXMh7XF_QP1_uhPX65AzwM2gi7MCBedGyzd3JJpLgtEYsgRiYbK5euM0NLvUDLDIjBpw&usqp=CAU">
+			<p class="pChoice">Player choice</p>
+			<p class="cChoice">Computer choice</p>
+			<p class="winner">Winner:</p>
+			<button onclick="restart()">Restart</button>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
